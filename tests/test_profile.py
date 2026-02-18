@@ -18,4 +18,4 @@ def test_update_profile(setup):
     profile.update_name("Pradnya Test")
     profile.save_profile()
 
-    assert "Profile" in driver.title
+    assert "Pradnya Test" in driver.page_source
